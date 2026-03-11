@@ -6,6 +6,7 @@ export DATA_DIR="$DBMS_ROOT/data"
 export SEPARATOR=":"
 export META_EXT=".meta"
 export DATA_EXT=".data"
+export PS3_PROMP=">>> "
 
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
