@@ -18,7 +18,7 @@ source "$DBMS_ROOT/modules/database/connect_db.sh"
 source "$DBMS_ROOT/modules/database/db_menu.sh"
 
 source "$DBMS_ROOT/modules/table/table_menu.sh"
-source "$DBMS_ROOT/modules/table/deop_table.sh"
+source "$DBMS_ROOT/modules/table/drop_table.sh"
 source "$DBMS_ROOT/modules/table/list_tables.sh"
 source "$DBMS_ROOT/modules/table/create_table.sh"
 source "$DBMS_ROOT/modules/table/select.sh"

@@ -21,6 +21,5 @@ connect_db(){
     local db_path="$DATA_DIR/$db_name"
     print_success "Connected to database $db_name."
 
-    # >>>>>>>>>>>>>> Interface with mrrr Ebraheem Number one <<<<<<<<<<<<<<<<
-    # table_menu "$db_path"
+    table_menu "$db_path"
 }
