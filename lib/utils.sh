@@ -5,7 +5,7 @@ print_success()  { echo -e "${GREEN}[OK]  $1${NC}"; }
 print_info()     { echo -e "${CYAN}[INFO] $1${NC}"; }
 
 read_input() {
-    local prompt="\$1"
+    local prompt="$1"
     local input
     read -rp "$prompt: " input
     echo "$input"
