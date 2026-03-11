@@ -1,14 +1,18 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Safe config: only set DBMS_ROOT if not already set; determine path relative to this file.
+: "${DBMS_ROOT:=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
+export DBMS_ROOT
+export DATA_DIR="${DBMS_ROOT}/data"
 
-export DBMS_ROOT="$(dirname "$(realpath "\$0")")"
-export DATA_DIR="$DBMS_ROOT/data"
+SEPARATOR=":"
+META_EXT=".meta"
+DATA_EXT=".data"
 
-export SEPARATOR=":"
-export META_EXT=".meta"
-export DATA_EXT=".data"
+# Terminal colors (exported)
+RED=$'\033[0;31m'
+GREEN=$'\033[0;32m'
+YELLOW=$'\033[1;33m'
+CYAN=$'\033[0;36m'
+NC=$'\033[0m'
 
-export RED='\033[0;31m'
-export GREEN='\033[0;32m'
-export YELLOW='\033[1;33m'
-export CYAN='\033[0;36m'
-export NC='\033[0m'
+export SEPARATOR META_EXT DATA_EXT RED GREEN YELLOW CYAN NC
