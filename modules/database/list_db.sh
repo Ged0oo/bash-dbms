@@ -1,4 +1,5 @@
 list_db(){
+    clear
     local dbs=()
     for dir in "$DATA_DIR"/*/; do
         [[ -d "$dir" ]] && dbs+=("$(basename "$dir")")
@@ -20,5 +21,5 @@ list_db(){
     done
     
     echo "═══════════════════════════════════"
-    echo "Total: ${#dbs[@]} database(s)"
+    echo -e "Total: ${#dbs[@]} database(s)\n"
 }

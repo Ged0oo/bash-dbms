@@ -1,14 +1,14 @@
 #!/bin/bash
 
-print_error()    { echo -e "${RED}[ERROR] $1${NC}"; }
-print_success()  { echo -e "${GREEN}[OK]  $1${NC}"; }
-print_info()     { echo -e "${CYAN}[INFO] $1${NC}"; }
+print_error()    { echo -e "${RED}[ERROR] $1${NC} \n"; }
+print_success()  { echo -e "${GREEN}[OK]  $1${NC} \n"; }
+print_info()     { echo -e "${CYAN}[INFO] $1${NC} \n"; }
 
 read_input() {
     local prompt="$1"
     local input
     read -rp "$prompt: " input
-    echo "$input"
+    echo -e "$input"
 }
 
 confirm() {

@@ -1,5 +1,10 @@
 connect_db(){
     list_db
+
+    echo "═══════════════════════════════════"
+    echo "======* Connect to Database *======"
+    echo "═══════════════════════════════════"
+
     local db_name
     db_name=$(read_input "Enter DB name to connect ")
 
