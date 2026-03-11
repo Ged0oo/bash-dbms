@@ -12,7 +12,7 @@ read_input() {
 }
 
 confirm() {
-    local prompt="\$1"
+    local prompt="$1"
     read -rp "$prompt [y/N]: " answer
     [[ "$answer" =~ ^[Yy]$ ]]
 }
