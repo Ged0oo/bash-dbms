@@ -7,6 +7,7 @@ export SEPARATOR=":"
 export META_EXT=".meta"
 export DATA_EXT=".data"
 export PS3_PROMP=">>> "
+
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
 export YELLOW='\033[1;33m'
