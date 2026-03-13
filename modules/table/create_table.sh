@@ -101,4 +101,7 @@ tbl_create() {
     : > "$data_file"
 
     print_success "Table '$table' created (meta=$(basename "$meta_file"), data=$(basename "$data_file"))"
+    local db_name
+    db_name=$(basename "$DB_PATH")
+    log_success "Table '$table' created in '$db_name'"
 }

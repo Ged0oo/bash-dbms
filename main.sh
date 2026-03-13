@@ -6,6 +6,7 @@ export DBMS_ROOT
 source "$DBMS_ROOT/config/config.sh"
 
 source "$DBMS_ROOT/lib/utils.sh"
+source "$DBMS_ROOT/lib/logger.sh"
 source "$DBMS_ROOT/lib/display.sh"
 source "$DBMS_ROOT/lib/validation.sh"
 

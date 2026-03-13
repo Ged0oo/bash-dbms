@@ -22,4 +22,5 @@ drop_db(){
 
     rm -r "$DATA_DIR/$db_name"
     print_success "Database '$db_name' dropped successfully."
+    log_warn "Database '$db_name' dropped by user"
 }

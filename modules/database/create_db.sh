@@ -15,4 +15,5 @@ create_db(){
 
     mkdir "$DATA_DIR/$db_name"
     print_success "Database $db_name created successfully."
+    log_success "Database '$db_name' created"
 }

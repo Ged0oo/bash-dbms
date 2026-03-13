@@ -85,4 +85,5 @@ tbl_insert() {
     exec 200>&-
 
     print_success "Row inserted into '$table'"
+    log_info "Row inserted into '$table'"
 }

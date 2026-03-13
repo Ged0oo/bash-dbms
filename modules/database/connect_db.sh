@@ -22,4 +22,5 @@ connect_db(){
     print_success "Connected to database $db_name."
 
     table_menu "$db_path"
+    log_info "Connected to database '$db_name'"
 }

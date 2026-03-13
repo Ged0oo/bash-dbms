@@ -88,4 +88,5 @@ tbl_update() {
     awk -F"$SEPARATOR" -v OFS="$SEPARATOR" -v pkcol="$pk_col" -v val="$pk_val" -v newline="$new_line" ' $pkcol==val {print newline; next} {print}' "$data_file" > "$tmp"
     mv "$tmp" "$data_file"
     print_success "Row with PK=$pk_val updated in '$table'"
+    log_info "Rows updated in '$table'"
 }

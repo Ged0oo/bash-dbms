@@ -59,4 +59,5 @@ tbl_delete() {
     awk -F"$SEPARATOR" -v OFS="$SEPARATOR" -v pkcol="$pk_col" -v val="$pk_val" '$pkcol != val {print}' "$data_file" > "$tmp"
     mv "$tmp" "$data_file"
     print_success "Deleted rows with PK=$pk_val from '$table'"
+    log_warn "Rows deleted from '$table'"
 }
