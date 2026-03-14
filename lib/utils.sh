@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 print_error()    { echo -e "${RED}[ERROR] $1${NC} \n"; }
 print_success()  { echo -e "${GREEN}[OK]  $1${NC} \n"; }

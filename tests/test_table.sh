@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -Eeuo pipefail
 
 DBMS_ROOT="${DBMS_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
