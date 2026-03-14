@@ -20,6 +20,13 @@ source "$DBMS_ROOT/modules/database/list_db.sh"
 source "$DBMS_ROOT/modules/database/drop_db.sh"
 source "$DBMS_ROOT/modules/database/connect_db.sh"
 
+# ── Stub side-effect dependencies used by modules ────────────────
+log_info() { :; }
+log_warn() { :; }
+log_error() { :; }
+log_success() { :; }
+table_menu() { :; }
+
 # ================================================================
 #  Minimal test framework
 # ================================================================

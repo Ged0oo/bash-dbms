@@ -6,10 +6,9 @@ print_info()     { echo -e "${CYAN}[INFO] $1${NC} \n"; }
 
 read_input() {
     local prompt="$1"
-    local prompt="$1"
     local input
     read -rp "$prompt: " input
-    echo -e "$input"
+    echo "$input"
 }
 
 confirm() {
