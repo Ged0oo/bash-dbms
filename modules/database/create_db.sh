@@ -1,7 +1,6 @@
 create_db(){
     local db_name
     db_name=$(read_input "Enter DB name to be created ")
-    db_name="${db_name//$'\r'/}"   # strip carriage returns captured by read
 
     if ! is_valid_name "$db_name"; then
         print_error "Invalid name: Only letters, numbers, underscores allowed"
