@@ -163,6 +163,34 @@ Example:
 
 ---
 
+## Sample Data
+
+The project includes temporary demo databases under `data/`:
+
+- `temp_company`
+- `temp_school`
+- `temp_store`
+
+These include ready-to-use `.meta` and `.data` files so you can directly connect and try select/update/delete operations.
+
+---
+
+## Testing
+
+Test scripts are located in `tests/`:
+
+- `tests/test_database.sh`
+- `tests/test_table.sh`
+
+Run them with:
+
+```bash
+bash tests/test_database.sh
+bash tests/test_table.sh
+```
+
+---
+
 ## Validation Rules
 
 - Names must start with a letter or `_`
